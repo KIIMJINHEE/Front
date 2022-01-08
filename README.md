@@ -1,4 +1,5 @@
 # [한 번에 끝내는 프론트엔드 개발 초격차 패키지 Online.]
+
 # 강의 노트에 없는 내용
 
 
@@ -113,7 +114,7 @@
     - Hypertext = link
 
 ```html
-<body>
+<body
   <!--구조-->
   <a href="https://naver.com">Naver</a>
 </body>

@@ -164,13 +164,10 @@
         <br>
         <!--margin : 요소의 '내부' 여백'을 지정하는 CSS 속성-->
         <span style = "padding:10px">World</span>
+      
+      <!--인라인 요소 안에 블록 요소 넣을 수 없다-->
+      <span><div></div></span> <!--불가-->
       ```
-
-    ![3](C:\Users\skess\Desktop\3.PNG)
-
-    ![image-20220110025501247](C:\Users\skess\AppData\Roaming\Typora\typora-user-images\image-20220110025501247.png)
-
-    
 
     
 
@@ -180,30 +177,23 @@
 
     - 블록 요소의 가로 넓이는 부모 요소의 크기만큼 자동으로 늘어나려고 한다. 세로 넓이는 (인라인 요소와 같이) 줄어들려고 한다. 
 
-    - 
-
-      ```html
+    - ```html
       <!--width : 요소의 가로 너비 지정하는 CSS 속성-->
         <div style = "width: 100px;"> Hello</div>
         <!--width : 요소의 세로 너비 지정하는 CSS 속성-->
         <div style = "height: 200px;"> world</div>
       
+        <!--블록 요소는 margin, padding 사용에서 인라인 요소와 다르다. 따라서, 시각적으로 제어를 하는 부분에 있어서 블록 요소가 유용하다-->
         <!--width : 요소의 외부 여백 지정하는 CSS 속성-->
         <div style = "margin: 10px;"> Hello</div>
         <!--width : 요소의 내부 여백 지정하는 CSS 속성-->
         <div style = "padding: 10px;"> world</div>
-      ```
-
-      ![image-20220110032715022](C:\Users\skess\AppData\Roaming\Typora\typora-user-images\image-20220110032715022.png)
-
-      블록 요소는 margin, padding 사용에서 인라인 요소와 다르다. 따라서, 시각적으로 제어를 하는 부분에 있어서 블록 요소가 유용하다.
-
       
-
-      블록 요소 안에 인라인 요소 넣을 수 있다. (일반적으로,  제약사항이 블록요소는 없고 인라인 요소들은 있다.)
-
-    ![image-20220110032900218](C:\Users\skess\AppData\Roaming\Typora\typora-user-images\image-20220110032900218.png)
+      <!--블록 요소 안에 인라인 요소 넣을 수 있다. (일반적으로, 제약사항이 블록요소는 없고 인라인 요소들은 있다.)-->
+        <div><span></span></div> <!--가능-->
+      ```
 
     
 
   
+
